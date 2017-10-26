@@ -31,4 +31,14 @@ Route::get('pictures', function () {
     return view('pictures', compact('tasks'));
 });
 
-//route for tasks
+//new tutorial Post
+Route::get('/', 'Postscontroller@index');
+
+Route::get('/posts/create', 'Postscontroller@create');
+
+//Route::get('posts/{post}', 'Postscontroller@show');
+
+//new tutorial blogs
+/*Route::get('/', 'Blogscontroller@index');
+
+Route::get('blogs/{blog}', 'Blogscontroller@example');*/
